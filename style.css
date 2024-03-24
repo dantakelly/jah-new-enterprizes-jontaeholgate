@@ -1,0 +1,844 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Noto Serif JP", serif ;
+    font-weight: 400 imo ;
+    font-style: normal ;
+    
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+/* Header */
+.head-container{ 
+    background-color: rgb(24, 23, 23);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{ 
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    left: 20px;
+}
+
+.head-container a{ 
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.head-container a:hover{ 
+    color: #8a8484;
+}
+
+.head-container ul{ 
+    text-decoration: none;
+    list-style-type: none;
+
+    display: flex;
+    gap: 20px;
+
+    position: relative;
+    right: 50px;
+}
+/* Header Closed */
+
+/* body section */
+
+.body-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    padding: 10px 0;
+}
+
+.body-container::before{ 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/body\ -\ background.jpg);
+    filter: brightness(0.3);
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-h1, .body-p{ 
+   position: relative; 
+   /* bottom: 150px; */
+   color: white;
+   font-size: 20px;
+   text-align: center;
+}
+
+.body-h1{ 
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: center;
+
+    position: relative;
+    bottom: 100px;
+}
+
+.body-p{ 
+    font-size: 30px;
+    text-align: center;
+    
+    position: relative;
+    bottom: 70px;
+}
+
+/* Download Button */
+.bodyButton button{ 
+    padding: 15px 13px;
+    border-radius: 22px;
+    border: none;
+    background-color: rgb(170, 38, 38);
+    color: white;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    transition: all 0.3s ease;
+}
+.bodyButton button:hover{ 
+    background-color: #f0ecec;
+    color: black;
+    font-weight: bolder;
+}
+/* dOWNLOAD Button */
+
+.box1, .box2, .box3{ 
+    width: 400px;
+    height: 400px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.boxes h1{ 
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+    position: relative;
+    top: 20px;
+}
+
+.boxes{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(24, 23, 23);
+}
+
+.boxes-inboxes{ 
+    display: flex;
+    gap: 40px;
+
+    padding: 50px 0px;
+}
+
+.box1{ 
+    background: url(./assets/food-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+.box2{ 
+    background: url(./assets/food-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+.box3{ 
+    background: url(./assets/food-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 10px #ffffff;
+}
+/* body section closed */
+
+/* footer section */
+.footer-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: linear-gradient(180deg, #181717, #8a8484);
+}
+
+.dateAndTime-AndLogo{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{ 
+    width: 100px;
+    height: 100px;
+}
+
+.footer-container h3{ 
+    color: white;
+    text-align: center;
+}
+/* footer section closed */
+
+
+/* About Us Section  */
+.about-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #181717;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.aboutUs-box{ 
+    box-shadow: 0px 0px 10px #ffffff;
+    width: 500px;
+    height: 380px;
+    border: solid white;
+    border-radius: 20px;
+
+    background: url(./assets/about\ us\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    top: 30px;
+}
+
+.about-container h1{ 
+    color: white;
+    font-size: 100px;
+
+    position: relative;
+    bottom: 10px;
+}
+
+.about-container p{ 
+    color: white;
+    font-size: 30px;
+
+    position: relative;
+    top: 10px;
+}
+/* About Us Section closed */
+
+/* Meet the team  */
+.meetTheTeam-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #181717;
+    min-height: 110vh;
+    text-align: center;
+}
+
+.meetTheTeam-box{ 
+    box-shadow: 0px 0px 10px #ffffff;
+    width: 50vh;
+    height: 50vh;
+    border: solid white;
+    border-radius: 20px;
+
+    background: url(./assets/sir\ jontae.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    bottom: 40px;
+}
+
+.meetTheTeam-container h1{ 
+    color: white;
+    font-size: 60px;
+
+    position: relative;
+    bottom: 100px;
+}
+
+.meetTheTeam-container p{ 
+    color: white;
+    font-size: 20px;
+
+    position: relative;
+    bottom: 70px;
+}
+
+.meetTheTeam-container h3{ 
+    color: white;
+    font-size: 40px;
+
+    position: relative;
+    bottom: 90px;
+}
+
+.hr-line-meet-the-team {
+    border: none; 
+    border-top: 1px solid white; 
+}
+
+.meetTheTeam-box-2{ 
+    box-shadow: 0px 0px 10px #ffffff;
+    width: 50vh;
+    height: 50vh;
+    border: solid white;
+    border-radius: 20px;
+
+    background: url(./assets/mr.johnson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    bottom: 25px;
+}
+/* meet the team section closed */
+
+
+
+
+/* Meet the team v2 for pc */
+.meetTheTeam-container-2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #181717;
+    min-height: 110vh;
+    text-align: center;
+}
+
+.meetTheTeam-box-2{ 
+    box-shadow: 0px 0px 10px #ffffff;
+    width: 50vh;
+    height: 50vh;
+    border: solid white;
+    border-radius: 20px;
+
+    background: url(./assets/sir\ jontae.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    bottom: 40px;
+}
+
+.meetTheTeam-container-2 h1{ 
+    color: white;
+    font-size: 60px;
+
+    position: relative;
+    bottom: 100px;
+}
+
+.meetTheTeam-container-2 p{ 
+    color: white;
+    font-size: 20px;
+
+    position: relative;
+    bottom: 70px;
+}
+
+.meetTheTeam-container-2 h3{ 
+    color: white;
+    font-size: 40px;
+
+    position: relative;
+    bottom: 90px;
+}
+
+.hr-line-meet-the-team {
+    border: none; 
+    border-top: 1px solid white; 
+}
+
+.meetTheTeam-box-2{ 
+    box-shadow: 0px 0px 10px #ffffff;
+    width: 50vh;
+    height: 50vh;
+    border: solid white;
+    border-radius: 20px;
+
+    background: url(./assets/mr.johnson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    bottom: 25px;
+}
+/* pc version 2 cloes  */
+
+/* Contact Us Section */
+  #title-Tag-Line {
+    font-size: 20px;
+  }
+   .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } 
+  
+  /* form animation starts */
+  .form {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #0e3721;
+  /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+  .title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+  }
+  .termsConditions{
+    margin: 0 auto 5px 80px;
+  }
+  
+  .pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .secondaryTitle{
+    color: grey;
+  }
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+  }
+  .name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2em;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .submit {
+    width: 200px;
+    color: white;
+    background-color: #0e3721;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+  }
+  
+  
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-color: #181717;
+  }
+
+  .wrapper input{ 
+    color: #181717;
+  }
+/* countact us closed */
+
+/* responsive nav --this should be hidden for desktops & laptops */
+.responsive-nav-MediaQuery{ 
+    display: none;
+}
+/* rn -- pl closed */
+/* hide show other members button for pc's & laptops */
+.otherMembersClick{ 
+    display: none;
+}
+/* closed *
+
+
+/* MEDIA QUERY SECTION */
+@media only screen and (min-width: 320px) and (max-width: 1080px) {
+   
+    /* NAVBAR */
+    .head-container{ 
+        display: none;
+    }
+
+    .responsive-nav-MediaQuery{ 
+        display: contents !important;
+    }
+    /* NAVBAR Closed */
+
+    /* index page media query*/
+    .body-container {
+        min-height: 130vh;
+        padding: 10px 10px;
+        
+    }
+
+    .body-container h1{ 
+        font-size: 44px;
+    }
+
+    .body-container p{ 
+        font-size: 28px;
+    }
+
+    .boxes-inboxes{ 
+        display: flex;
+        flex-direction: column;
+    }
+    /* index page media query closed*/
+
+    /* About Us page media */
+    .about-container { 
+        padding: 50px;
+    }
+
+    .about-container h1{ 
+        font-size: 70px;
+    }
+
+    .about-container p{ 
+        font-size: 30px;
+    }
+
+    .aboutUs-box{ 
+        width: 370px;
+        height: 280;
+    }
+    /* About Us page media closed*/
+
+    /* Contact Us media  */ 
+        .form {
+            background: #fff;
+            box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+            border-radius: 5px;
+            max-width: 380px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            border-top: 5px solid #0e3721;
+            border-radius: 20px;
+            /* z-index: 1; */
+    }
+    /* Contact Us Media closed */
+
+    /* Meet The Team Setion */
+    .meetTheTeam-container{
+        padding: 20px 15px;
+        min-height: 130vh;
+    }
+
+    .meetTheTeam-container h1{ 
+        font-size: 20px;
+    }
+    /* Meet The Team Setion Closed*/
+}
+
+
+/* Media for small phones */
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .main-container{ 
+        position: relative;
+    }
+
+    .main-container h1{ 
+        padding: 20px;
+
+        position: relative;
+        top: 2px;
+    }
+
+    .main-container p{ 
+        padding:20px 20px;
+        font-size: 23px;
+
+        position: relative;
+        top: 2px;
+    }
+
+    .box1, .box2, .box3{ 
+        width: 340px;
+        height: 340px;
+    }
+
+    .boxes-inboxes{ 
+        gap: 50px;
+    }
+
+    /* About Us section for small phones */
+    .about-container{ 
+        padding: 40px 10px; 
+    }
+
+    .about-container h1{
+        font-size: 50px;
+    }
+
+    .about-container p{ 
+        font-size: 19px;
+    }
+
+    .aboutUs-box{ 
+        width: 340px;
+        height: 340px;
+    }
+    /* About Us for small phones done */
+
+
+    /* Team Members for phone media query */
+    .teamPerson-2{ 
+        display: none;
+    }
+
+    .otherMembersClick{ 
+        padding: 15px 13px;
+        border-radius: 22px;
+        border: none;
+        background-color: rgb(170, 38, 38);
+        color: white;
+        font-size: 20px;
+        font-family: "Noto Serif JP", serif;
+        font-weight: 400;
+        font-style: normal;
+    
+        transition: all 0.3s ease;
+        display: contents !important; 
+
+        position: fixed;
+    }
+    .otherMembersClick:hover{ 
+        background-color: #f0ecec;
+        color: black;
+        font-weight: bolder;
+
+        display: contents !important; 
+    }
+
+    .meetTheTeam-container{ 
+        min-height: 160vh;
+    }
+
+    .meetTheTeam-container h1{ 
+        font-size: 50px;
+    }
+
+    .meetTheTeam-container h3{ 
+        font-size: 30px;
+        
+        position: relative;
+        bottom: 50px;
+    }
+
+    .meetTheTeam-container p{ 
+        padding: 40px 40px;
+    }
+
+    .meetTheTeam-container h1{ 
+        position: relative;
+        bottom: 50px;
+    }
+
+    .meetTheTeam-box{ 
+        width: 43vh;
+        height: 43vh;
+
+        position: relative;
+        bottom: 50px;
+    }
+
+    .meetTheTeam-box-2{ 
+        width: 43vh;
+        height: 43vh;
+
+        position: relative;
+        bottom: 50px;
+    }
+
+    /* Contact Us media  */ 
+    .form {
+        background: #fff;
+        box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+        border-radius: 5px;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        border-top: 5px solid #0e3721;
+        border-radius: 20px;
+        /* z-index: 1; */
+
+       
+}
+/* Contact Us Media closed */
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    .meetTheTeam-container-2{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+    
+        background-color: #181717;
+        min-height: 110vh;
+        text-align: center;
+    }
+
+    .meetTheTeam-container-2{ 
+        min-height: 180vh;
+    }
+
+    .meetTheTeam-container-2 h1{ 
+        font-size: 40px;
+    }
+
+    .meetTheTeam-container-2 h3{ 
+        font-size: 30px;
+        
+        position: relative;
+        bottom: 50px;
+    }
+
+    .meetTheTeam-container-2 p{ 
+        padding: 40px 40px;
+        font-size: 21px;
+
+        position: relative;
+        bottom: 65px;
+    }
+
+    .meetTheTeam-container-2 h1{ 
+        position: relative;
+        bottom: 50px;
+    }
+
+    .meetTheTeam-box-2{ 
+        width: 43vh;
+        height: 43vh;
+
+        position: relative;
+        bottom: 50px;
+    }
+
+    .meetTheTeam-box-2{ 
+        width: 43vh;
+        height: 43vh;
+
+        position: relative;
+        bottom: 50px;
+    }
+    /* Team Members for phone media query closed */
+}
+/* Media for small phones  closed*/
